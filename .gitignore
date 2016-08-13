@@ -63,6 +63,7 @@ dist/*.zip
 **/SW4STM32/**/.settings
 **/SW4STM32/**/.metadata
 **/SW4STM32/**/Debug
+**/SW4STM32/**/Release
 **/RemoteSystemsTempFiles
 sw4stm32_export*.xml
 
