@@ -1,0 +1,128 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Modtronix
+# =========================
+*.bak
+*.nobak
+*.nodis
+*.nodis*
+*_MODTRONIX.txt
+MODTRONIX_*.txt
+build_dist.bat
+lib_hg_status.bat
+build_dist.xml
+dist/*.zip
+
+**/.git/sourcetreeconfig
+
+# Mercurial Repository
+# =========================
+.hgignore
+**/.hg/cache
+**/.hg/store
+**/.hg/bookmark
+**/.hg/branch
+**/.hg/dirstate
+**/.hg/requires
+**/.hg/sourcetreeconfig
+**/.hg/thgstatus
+**/.hg/undo*
+**/.hg/00changelog*
+**/.hg/cur-message*
+**/.hg/last-message*
+
+# SW4STM32
+# =========================
+**/SW4STM32/**/.settings
+**/SW4STM32/**/.metadata
+**/SW4STM32/**/Debug
+**/RemoteSystemsTempFiles
+sw4stm32_export*.xml
+
+# CoIDE
+# =========================
+**/CoIDE/Default
+**/CoIDE/*.log
+**/*.comarker
+**/*.cogui
+
+# MBED Library
+# =========================
+**/TOOLCHAIN_ARM_MICRO
+**/TOOLCHAIN_ARM_STD
+**/TOOLCHAIN_IAR
+
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
