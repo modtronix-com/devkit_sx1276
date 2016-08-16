@@ -1,0 +1,11 @@
+#This file contains the versions of libraries used in the project.
+#It is included in "lib_hg_create.bat" file. Ensure to keep format as required
+#for Windows batch files!
+#For details on libraries used in this project, see "Readme.txt" file
+#
+#
+# ----- Library versions -----
+mbed_nz32sc151__version=v1.0
+modtronix_im4OLED__version=v1.0
+modtronix_inAir__version=v1.0
+modtronix_NZ32S__version=v1.0

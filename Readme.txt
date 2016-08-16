@@ -19,15 +19,6 @@ This folder contains a CoIDE and "System Workbench for STM32"(SW4STM32) project.
   "New Configuration" creaetd above, and ensure "nz32sc151.cfg" is in the "Configuration Script" box.
   
   
-========== CoIDE ==========
-!!!!!!!!!! CoIDE is currently not implemented !!!!!!!!!!
-- For details on using this board with the SW4STM32 IDE, see:
-  http://wiki.modtronix.com/doku.php?id=tutorials:coide-with-nz32-boards
-- The IDE can be downloaded from http://coocox.org/
-- Download and use V2!
-- After installing program, open CoIDE project in CoIDE folder.
-
-
 ========== Upgrading Firmware ==========
 After building the project, the NZ32-SC151 board can be programmed with the new code using the a
 USB Bootloader(via USB port on NZ32-SC151), or via an ST-Link/V2.1 programmer.
@@ -41,3 +32,18 @@ http://www.st.com/web/en/catalog/tools/PF257938
 
 This contains the current working project. This is the standard
 c project. Fixed USB issue where program froze when receiving data.
+
+
+========== Check out project using SourceTree ==========
+This project consists out of a main repository, with some libraries that are cloned from remote repositories.
+When checking out the project from GitHub, this is not obvious seeing that the ".hg" repositor folder
+is not present. Newer version of the libraries might be available - but have NOT been tested with this project!
+
+Newer versions of the libraries(if avaible) might work, but have NOT been tested!
+The "lib_checkout.bat" batch file can be used to check out newer libraries.
+
+Library Version:
+See "lib_versions.txt" file to see the versions of the library used.
+
+Library URL locations:
+See "lib_url" variables in "lib_checkout.bat" for library URLs

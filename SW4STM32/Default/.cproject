@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot; &amp;&amp; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot; &amp;&amp; arm-none-eabi-objcopy -O ihex &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.hex&quot; ">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1709730888" name="Ac6 STM32 MCU GCC" resourceTypeBasedDiscovery="true" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.888545680" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L151RCTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.111747505" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="nz32sc151" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.219289233" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/test_project}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.1451390181" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1497933774" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1791441721" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1783038259" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.254562127" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1662598166" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="STM32L151RCTx"/>
+									<listOptionValue builtIn="false" value="STM32L1"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_NZ32SC151"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L151RC"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+								</option>
+								<option id="gnu.c.compiler.option.dialect.std.277288503" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.162296802" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1350095284" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.588965523" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.1956935158" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.312980721" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.2138617660" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1113164952" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="STM32L151RCTx"/>
+									<listOptionValue builtIn="false" value="STM32L1"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_NZ32SC151"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L151RC"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.976789744" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1645032239" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1371913887" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.639455670" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1049502559" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.992686050" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" value="..\..\..\mbed_nz32sc151\targets\cmsis\TARGET_STM\TARGET_STM32L1\TARGET_NZ32SC151\TOOLCHAIN_GCC_ARM\STM32L151XC.ld" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.258417558" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-specs=nano.specs" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1313353901" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.623812159" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1363196859" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.658601442" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.545517462" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.224442950" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="modtronix_inAir/sx1276-inAir.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot; &amp;&amp; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.500729760" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1553381906" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L151RCTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1959122047" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="nz32sc151" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.285331964" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/test_project}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.1923787113" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1470677528" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.221691983" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.205069780" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.789615606" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.668385295" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L151RCTx"/>
+									<listOptionValue builtIn="false" value="STM32L1"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_NZ32SC151"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L151RC"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="MX_DEBUG_DISABLE"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1855996378" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1007781533" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1298262148" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.1076347858" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1268846235" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1550809696" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.709178724" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L151RCTx"/>
+									<listOptionValue builtIn="false" value="STM32L1"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_NZ32SC151"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32L151RC"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="MX_DEBUG_DISABLE"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.2016776982" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1825464492" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.899067146" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.38740460" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="gnu.cpp.link.option.flags.185291824" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-specs=nano.specs" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.990951131" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1507207525" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1069620973" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.1110625791" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/cmsis/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151/TOOLCHAIN_GCC_ARM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/targets/hal/TARGET_STM/TARGET_STM32L1/TARGET_NZ32SC151&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../mbed_nz32sc151/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/core/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../usbcdc-cube/middlewares/st/stm32_usb_device_library/class/cdc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_im4OLED&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_inAir&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../modtronix_NZ32S&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.182895201" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.65840096" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="modtronix_inAir/sx1276-inAir.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="test_project.fr.ac6.managedbuild.target.gnu.cross.exe.238334097" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/Default"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/Default"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286;fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1497933774;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.162296802">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885;fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1470677528;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1855996378">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885;fr.ac6.managedbuild.config.gnu.cross.exe.release.778836885.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1298262148;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.2016776982">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286;fr.ac6.managedbuild.config.gnu.cross.exe.debug.1695359286.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.588965523;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1645032239">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

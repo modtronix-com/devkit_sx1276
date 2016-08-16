@@ -45,6 +45,7 @@ dist/*.zip
 # Mercurial Repository
 # =========================
 .hgignore
+.hgtags
 **/.hg/cache
 **/.hg/store
 **/.hg/bookmark
