@@ -37,6 +37,8 @@
 MODTRONIX_*.txt
 build_dist.bat
 lib_hg_status.bat
+lib_hg_summary_remote.bat
+repo_git_summary_remote.bat
 build_dist.xml
 dist/*.zip
 
