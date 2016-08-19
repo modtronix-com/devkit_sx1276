@@ -5,7 +5,7 @@
 #
 #
 # ----- Library versions -----
-mbed_nz32sc151__version=v1.0
-modtronix_im4OLED__version=v1.0
-modtronix_inAir__version=v1.0
-modtronix_NZ32S__version=v1.0
+mbed_nz32sc151__version=v1.1
+modtronix_im4OLED__version=v1.1
+modtronix_inAir__version=v1.1
+modtronix_NZ32S__version=v1.1
