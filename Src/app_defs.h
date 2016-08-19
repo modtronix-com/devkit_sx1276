@@ -44,6 +44,13 @@
 #endif
 
 
+//Some defines to build versions for 433, 868 and 915MHz devkits
+//#define DEVKIT_FOR_INAIR4         //Freq = 434.4MHz, BW=250, SF=12, Pwr=14dBm
+//#define DEVKIT_FOR_INAIR9_915     //Freq = 918.8MHz, BW=250, SF=12, Pwr=14dBm
+//#define DEVKIT_FOR_INAIR9_868     //Freq = 868.8MHz, BW=250, SF=12, Pwr=14dBm
+#define DEVKIT_FOR_INAIR9B_915    //Freq = 918.8MHz, BW=250, SF=12, Pwr=17dBm
+//#define DEVKIT_FOR_INAIR9B_868    //Freq = 868.8MHz, BW=250, SF=12, Pwr=17dBm
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Defines ////////////////////////////////////////////////////////////////////
@@ -89,10 +96,26 @@
 #define RADIO_COUNT_CHAR    ('0'+RADIO_COUNT)
 
 //Radio Default values
-#define RF_FREQUENCY                                918800000 // 918.8 kHz
-#define TX_OUTPUT_POWER                             14        // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#if defined(DEVKIT_FOR_INAIR4)
+    #define RF_FREQUENCY                            434400000   // 434.4 MHz
+    #define TX_OUTPUT_POWER                         14          // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#elif defined(DEVKIT_FOR_INAIR9_868)
+    #define RF_FREQUENCY                            868800000   // 868.8 MHz
+    #define TX_OUTPUT_POWER                         14          // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#elif defined(DEVKIT_FOR_INAIR9_915)
+    #define RF_FREQUENCY                            918800000   // 918.8 MHz
+    #define TX_OUTPUT_POWER                         14          // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#elif defined(DEVKIT_FOR_INAIR9B_868)
+    #define RF_FREQUENCY                            868800000   // 868.8 MHz
+    #define TX_OUTPUT_POWER                         17          // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#elif defined(DEVKIT_FOR_INAIR9B_915)
+    #define RF_FREQUENCY                            918800000   // 918.8 MHz
+    #define TX_OUTPUT_POWER                         17          // 14 dBm. Max 14 for inAir4 and inAir9, and 20(17) for inAir9B
+#else
+    #error "Invalid value for DEVKIT_FOR_FREQ!"
+#endif
 #define TX_OUTPUT_POWER_BOOST                       17        // 17 dBm. Default power for hardware using Boost output, like inAir9B
-#define LORA_BANDWIDTH                              LORA_BW_500000
+#define LORA_BANDWIDTH                              LORA_BW_250000
 #define LORA_SPREADING_FACTOR                       12      // SF7..SF12
 #define LORA_CODINGRATE                             1       // 1=4/5, 2=4/6, 3=4/7, 4=4/8
 #define LORA_PREAMBLE_LENGTH                        8       // Same for Tx and Rx

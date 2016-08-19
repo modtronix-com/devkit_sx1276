@@ -15,6 +15,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #ifndef __SX1276_REGS_LORA_H__
 #define __SX1276_REGS_LORA_H__
 
+#include "inair_default_config.h"
+
 /*!
  * ============================================================================
  * SX1276 Internal registers Address

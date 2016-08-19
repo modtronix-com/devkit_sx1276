@@ -21,6 +21,7 @@
 #ifndef MX_HELPERS_H_
 #define MX_HELPERS_H_
 
+#include "nz32s_default_config.h"
 
 // Debugging //////////////////////////////////////////////////////////////////
 // To enable debug output from this file, define MX_DEBUG and DEBUG_ENABLE_MX_HELPERS before

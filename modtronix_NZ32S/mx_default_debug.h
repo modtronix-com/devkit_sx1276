@@ -21,6 +21,8 @@
 #ifndef SRC_MX_DEFAULT_DEBUG_H_
 #define SRC_MX_DEFAULT_DEBUG_H_
 
+#include "nz32s_default_config.h"
+
 //This file is used for default debugging. Standard way to use it is:
 //
 //

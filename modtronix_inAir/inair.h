@@ -15,6 +15,7 @@ Maintainers: Miguel Luis, Gregory Cristian and Nicolas Huguenin
 #ifndef __SX1276_H__
 #define __SX1276_H__
 
+#include "inair_default_config.h"
 #include "radio.h"
 #include "sx1276Regs-Fsk.h"
 #include "sx1276Regs-LoRa.h"

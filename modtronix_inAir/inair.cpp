@@ -12,6 +12,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 
 Maintainers: Miguel Luis, Gregory Cristian and Nicolas Huguenin
 */
+#include "mbed.h"
 #include "inair.h"
 
 //MODTRONIX BEGIN /////////////////////////////////////////////////////////////

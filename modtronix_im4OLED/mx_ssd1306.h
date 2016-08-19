@@ -22,8 +22,7 @@ All text above, and the splash screen must be included in any redistribution
 
 #ifndef _ADAFRUIT_SSD1306_H_
 #define _ADAFRUIT_SSD1306_H_
-
-#include "mbed.h"
+#include "im4oled_default_config.h"
 #include "mx_gfx.h"
 
 #if (OLED_USE_VECTOR==1)

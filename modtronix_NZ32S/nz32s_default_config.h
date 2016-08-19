@@ -30,12 +30,12 @@
 
 // Copy from here to custom nz32s_defines.h file //////////////////////////////
 
-//Set to 1 to disable A13 and A14 from being used(are SWD serial program/debug ping). Must be done if
+//Set to 0 to disable A13 and A14 from being used(are SWD serial program/debug ping). Must be done if
 //debugging is going to be used. These pins are used by ST-Link for programming debugging, but also used
 //for battery level monitoring, and enabling fast battery charge. Setting this define to 0 will disable these
 //functions, but will enable programming and debugging via SWD (ST-Link)
-#if !defined(DONT_USE_A13_A14)
-#define     DONT_USE_A13_A14    1
+#if !defined(NZ32S_USE_A13_A14)
+#define     NZ32S_USE_A13_A14    0
 #endif
 
 //Defines is Windowed or Independent Watchdog timer should be used. Windowed Watchdog Timer, is topped during

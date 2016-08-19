@@ -21,12 +21,11 @@
 #ifndef NZ32S_H_
 #define NZ32S_H_
 
-#include "mbed.h"
+#include "nz32s_default_config.h"
 #include "mx_tick.h"
 #include "mx_helpers.h"
 #include "mx_circular_buffer.h"
 #include "mx_cmd_buffer.h"
-#include "nz32s_default_config.h"
 
 
 // Debugging //////////////////////////////////////////////////////////////////
@@ -119,9 +118,9 @@ public:
      * "Fast Charge" (J13 on NZ32-SC151) on the back of the board is made!
      */
     static inline void enable_fast_charging(void) {
-        #if (DONT_USE_A13_A14 == 0)
+        #if (NZ32S_USE_A13_A14 == 1)
         enableFastCharge.output();
-        enableFastCharge = 0;
+        enableFastCharge = 0; //Enable fast charging
         #endif
     }
 
@@ -129,7 +128,7 @@ public:
     /** Disable fast charging
      */
     static inline void disable_fast_charging(void) {
-        #if (DONT_USE_A13_A14 == 0)
+        #if (NZ32S_USE_A13_A14 == 1)
         NZ32S::enableFastCharge.input();
         NZ32S::enableFastCharge.mode(PullNone);
         #endif
@@ -258,7 +257,7 @@ public:
     static DigitalOut led1;
     static DigitalIn  btn1;
 
-    #if (DONT_USE_A13_A14 == 0)
+    #if (NZ32S_USE_A13_A14 == 1)
     static DigitalInOut enableFastCharge;
     #endif
 };

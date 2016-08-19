@@ -47,7 +47,7 @@ WWDG_HandleTypeDef NZ32S::hwwdg;    //Windowed Watchdog Timer, is stopped during
 #else
 IWDG_HandleTypeDef NZ32S::hiwdg;    //Independent Watchdog Timer, is NOT stopped during low power mode!
 #endif
-#if (DONT_USE_A13_A14 == 0)
+#if (NZ32S_USE_A13_A14 == 1)
 DigitalInOut NZ32S::enableFastCharge(PA_14, PIN_INPUT, PullNone, 0);
 #endif
 
@@ -70,7 +70,7 @@ uint16_t NZ32S::get_batt_mv() {
     //uint16_t getBattMV(void) {
     //    float fval = 0;
     //
-    //#if (DONT_USE_A13_A14 == 0)
+    //#if (NZ32S_USE_A13_A14 == 1)
     ////    uint16_t meas;
     ////
     ////    //Measure Vbatt. It doesn't seem to make lots of a difference if we disable the DC/DC converter!

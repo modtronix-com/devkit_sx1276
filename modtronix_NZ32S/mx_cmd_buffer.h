@@ -65,6 +65,7 @@
 // 'Hi^'; is decoded as:
 //  H, i, ^, ^
 
+#include "nz32s_default_config.h"
 #include "mx_buffer_base.h"
 #include "mx_circular_buffer.h"
 

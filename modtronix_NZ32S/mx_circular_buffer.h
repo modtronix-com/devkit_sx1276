@@ -21,6 +21,7 @@
 #ifndef SRC_MX_CIRCULAR_BUFFER_H_
 #define SRC_MX_CIRCULAR_BUFFER_H_
 
+#include "nz32s_default_config.h"
 #include "mx_buffer_base.h"
 
 /** Templated Circular buffer class

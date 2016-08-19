@@ -21,7 +21,6 @@
 #ifndef SRC_MX_BUFFER_BASE_H_
 #define SRC_MX_BUFFER_BASE_H_
 
-
 class MxBuffer {
 
 public:

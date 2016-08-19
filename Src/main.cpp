@@ -7,8 +7,23 @@
  * Source code for Modtronix DEVKIT-SX1276!
  *
  * !!!!! Important DEBUGGING note !!!!!
+ *
+ *
+ * ===== Debugging =====
  * To do software debugging via IDE, the following define must be set to 1 in "modtronix_config.h"!
- * #define     DONT_USE_A13_A14    1
+ * #define  NZ32S_USE_A13_A14  1
+ *
+ * This will cause debug information to be written out on the serial port. When using a programmer with
+ * USB to Serial Port converter, this debug information can be viewed on a standard serial terminal.
+ *
+ * ===== Build Release Firmware =====
+ * To build firmware for release, Ensure following define is in "modtronix_config.h" file:
+ * #define MX_DEBUG_DISABLE
+ *
+ * Next, enable one of the DEVKIT_FOR_INAIR9_xx defines in "app_def.h" file. For example, for 915MHz devkit
+ * using inAir9 module:
+ * #define DEVKIT_FOR_INAIR9_915
+ *
  *
  * Software License Agreement:
  * This software has been written or modified by Modtronix Engineering. The code
@@ -38,7 +53,6 @@ int             tmrPwrInt = 0;
 DigitalInOut    led1Pwr(PC_10);     //LED1 and power button. 1=LED on. 1=Button pressed.
 DigitalOut      led2(PC_11);        //LED2, 1=LED on
 DigitalOut      led3(PC_12);        //LED3, 0=LED on
-//DigitalOut      pinPwrEnable(PA_15);
 DigitalOut      pinBuzzer(PC_9);    //Buzzer, 1=Buzzer on
 AppConfig       appConfig;
 AppData         appData;
@@ -77,6 +91,7 @@ void processUsbCmds(void);
 void processRxDataUSB(uint8_t iRadio);
 #endif
 
+
 void pwrIntISR() {
     if(pwrIntEn) {
         //Debounce 500ms
@@ -101,6 +116,12 @@ int main() {
     int tmrMenu = 0;
 #endif
 
+    //Turn all LEDs and buzzer on PT01NZ board off
+    led1Pwr = 0;
+    led2 = 0;
+    led3 = 1;
+    pinBuzzer = 0;
+
     currRadio = 0;
     appData.flags.Val = 0;
 
@@ -109,17 +130,16 @@ int main() {
     pwrIntEn = true;    //Enable code in pwrInt ISR. Required because ISR is also active when port is set as output!
     pwrInt.rise(pwrIntISR);
 
-    // TEST TEST
-    //pinPwrEnable = 0;
-    pinBuzzer = 0;
-
     memset(&radioConfig, 0, sizeof(radioConfig));
 
-    streamDebug.baud(230400);       //Set UART speed used for debugging
+    //streamDebug.baud(230400);       //Set UART speed used for debugging
     //streamDebug.baud(19200);        //Set UART speed used for debugging
+    streamDebug.baud(57600);        //Set UART speed used for debugging
     i2cBus1.frequency(I2C1_SPEED);  //Set I2C bus speed
 
     NZ32S::clear_led1();            //Initialize System LED = off
+
+    NZ32S::enable_fast_charging();  //Enable fast charging
 
     #if defined(HAS_WATCHDOG)
     if (NZ32S::watchdog_caused_reset(true)) {
@@ -198,8 +218,6 @@ int main() {
 
             wait_ms(200);
 
-            //pinPwrEnable = 1;   //Disable power
-
             {
                 GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -253,13 +271,7 @@ int main() {
 
             //After we wake up, reset system
             NVIC_SystemReset();
-
-            //pinPwrEnable = 0;   //Enable power
         }
-
-        // TEST TEST
-        //NZ32S::set_led1(); wait_ms(1);
-        //NZ32S::clear_led1(); wait_ms(1);
 
 #if !defined(DISABLE_RESET_RADIO_USB_TIMERS)
         //Watchdog timer refresh with following conditions:
@@ -389,8 +401,7 @@ int main() {
 
         } //for(iRadio=0; iRadio < RADIO_COUNT; iRadio++) {
 
-        // TEST TEST
-        dummy = 6;  //Without a command here, program does NOT run???????
+        //dummy = 6;  //Without a command here, program does NOT run???????
     }
 }
 

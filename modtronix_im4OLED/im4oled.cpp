@@ -18,8 +18,8 @@
  * COMPANY SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL OR
  * CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
  */
-#include "im4oled.h"
 #include "mbed.h"
+#include "im4oled.h"
 #include "mx_tick.h"
 
 #define BTN_SAMPLES 4

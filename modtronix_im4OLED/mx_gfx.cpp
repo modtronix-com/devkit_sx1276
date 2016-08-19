@@ -16,9 +16,7 @@ All text above must be included in any redistribution
 /*
  *  Modified by Neal Horman 7/14/2012 for use in mbed
  */
-
 #include "mbed.h"
-
 #include "mx_gfx.h"
 #include "mx_gfx_font.h"
 

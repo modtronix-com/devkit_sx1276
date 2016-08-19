@@ -21,6 +21,8 @@
 #ifndef MODTRONIX_NZ32S_MX_TICK_H_
 #define MODTRONIX_NZ32S_MX_TICK_H_
 
+#include "nz32s_default_config.h"
+
 #define MODTRONIX_NZ32S_MX_TICK_INC MxTick::increment()
 
 /** A general purpose milli-second and second timer.

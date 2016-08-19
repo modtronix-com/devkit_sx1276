@@ -15,9 +15,6 @@ Maintainers: Miguel Luis, Gregory Cristian and Nicolas Huguenin
 #ifndef __RADIO_H__
 #define __RADIO_H__
 
-#include "mbed.h"
-#include "inair_default_config.h"
-
 
 /*!
  *    State of the radio:

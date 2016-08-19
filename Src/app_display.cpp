@@ -51,11 +51,13 @@ int             tmrUpdateBatt;
 uint16_t        percentBatt;    //Battery percentage
 #if !defined(DISABLE_OLED)
 MxSSD1306_I2C   oled(0x78, i2cBus1, 64);
-    #if (IM4OLED_VIA_PT01NZ==1)
-    Im4OLED         im4Oled(PC_2, PC_1); //OK & Star, Up & Down
-    #else
-    Im4OLED         im4Oled(PC_1, PC_12, PC_2, PC_10); //OK, Star, Up, Down
-    #endif
+
+#if (IM4OLED_VIA_PT01NZ==1)
+Im4OLED         im4Oled(PC_2, PC_1); //OK & Star, Up & Down
+#else
+Im4OLED         im4Oled(PC_1, PC_12, PC_2, PC_10); //OK, Star, Up, Down
+#endif
+
 #endif
 static const uint8_t arrBwChar[][5] = {"7.8", "10.4", "15.6", "20.8", "31.2", "41.7", "62.5", "125", "250", "500"};
 
@@ -1008,7 +1010,7 @@ AnalogIn        ainVSense(PB_12);
 AnalogIn        ainVSense(PC_4);
 #endif
 AnalogIn        ainVBatt(PC_5);
-#if (DONT_USE_A13_A14 == 0)
+#if (NZ32S_USE_A13_A14 == 1)
 DigitalInOut    ctrVBatt(PA_13);
 #endif
 
@@ -1050,7 +1052,7 @@ void updateBattLevel(void) {
 
     //Assume voltage decreases linearly from 4.2 to 3.2V
     //Measure Vbatt. It doesn't seem to make lots of a difference if we disable the DC/DC converter!
-#if (DONT_USE_A13_A14 == 0)
+#if (NZ32S_USE_A13_A14 == 1)
     ctrVBatt = 0;
     ctrVBatt.output();
 #endif
@@ -1071,7 +1073,7 @@ void updateBattLevel(void) {
     }
 
     averBattAdc = averBattAdc / SIZE_ARR_BATT_ADC;
-#if (DONT_USE_A13_A14 == 0)
+#if (NZ32S_USE_A13_A14 == 1)
     ctrVBatt.input();
 #endif
     //fval = ((float)meas / (float)0xffff) * 6600; //6600 = 3300*2, because resistor divider = 2

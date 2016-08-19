@@ -22,6 +22,7 @@ All text above, and the splash screen must be included in any redistribution
  
 #ifndef FONT5X7_H
 #define FONT5X7_H
+#include "im4oled_default_config.h"
 
 // standard ascii 5x7 font
 

@@ -8,6 +8,15 @@
 #define _MODTRONIX_CONFIG_H_
 
 
+
+/////////////////////////////////////////////////
+//////////////// Debugging //////////////////////
+
+//Disable all debugging! Uncomment this to build firmware for release
+//#define MX_DEBUG_DISABLE
+
+
+
 /////////////////////////////////////////////////
 //////////// modtronix_im4OLED //////////////////
 
@@ -32,6 +41,7 @@
 #define GFX_SIZEABLE_TEXT       1
 
 
+
 /////////////////////////////////////////////////
 ////////////// modtronix_inAir //////////////////
 #if !defined(INAIR_DIO0_IS_INTERRUPT)
@@ -51,13 +61,15 @@
 #endif
 
 
+
 /////////////////////////////////////////////////
 ////////////// modtronix_NZ32S //////////////////
-//Set to 1 to DISABLE A13 and A14 from being used(are SWD serial program/debug ping). Must be done if
+
+//Set to 0 to disable A13 and A14 from being used(are SWD serial program/debug ping). Must be done if
 //debugging is going to be used. These pins are used by ST-Link for programming debugging, but also used
 //for battery level monitoring, and enabling fast battery charge. Setting this define to 0 will disable these
 //functions, but will enable programming and debugging via SWD (ST-Link)
-#define     DONT_USE_A13_A14    0
+#define     NZ32S_USE_A13_A14    1
 
 
 
