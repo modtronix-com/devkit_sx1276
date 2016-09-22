@@ -1,0 +1,1 @@
+This folder contains YAT files. You can open it in YAT to get pre defined serial terminal command strings.
